@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW1: Grid Map & Policy Evaluation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>HW1-1: 網格地圖開發</h1>
+        <div class="controls">
+            <label for="grid-size">Enter a number between 3 and 10:</label>
+            <input type="number" id="grid-size" min="3" max="10" value="5">
+            <button id="generate-btn">Generate Square</button>
+        </div>
+
+        <h2 id="grid-title">5 x 5 Square:</h2>
+        <p class="instructions">1. Click on a cell to set up the start grid as green or the end grid as red.</p>
+        <p class="instructions" id="obstacle-instruction" style="display: none;">2. Click to add obstacles (<span id="obs-count">0</span>/<span id="obs-max">3</span>).</p>
+
+        <div id="grid-container" class="grid-container"></div>
+        
+        <div class="action-container">
+            <button id="evaluate-btn" disabled>Evaluate Policy</button>
+        </div>
+
+        <hr>
+
+        <div id="results-container" style="display: none;">
+            <h1>HW1-2: 策略顯示與價值評估</h1>
+            <div class="matrices-container">
+                <div class="matrix-card">
+                    <h3>Value Matrix</h3>
+                    <div id="value-matrix" class="grid-container"></div>
+                </div>
+                <div class="matrix-card">
+                    <h3>Policy Matrix</h3>
+                    <div id="policy-matrix" class="grid-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

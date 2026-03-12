@@ -5,6 +5,8 @@ Developed as part of the Deep Reinforcement Learning course.
 
 🔗 **[Live Demo](https://v901203.github.io/-0304DRL_HW1/)**
 
+📄 **[Q&A 文件 (PDF)](HW1_QA.pdf)**
+
 ---
 
 ## ✨ Features
@@ -35,11 +37,14 @@ Developed as part of the Deep Reinforcement Learning course.
 
 ## 📸 Preview
 
-### HW1-1 Grid Map & HW1-3 Value Iteration Results
-![HW1 Grid and Value Iteration](screenshot_hw13.png)
+### HW1-1 網格地圖開發
+![HW1-1 Grid Map](screenshot_hw11.png)
 
-### HW1-3 Shortest Path with Arrow Visualization
-![HW1-3 Shortest Path](screenshot_hw13_path.png)
+### HW1-1 設定起點、終點、障礙物
+![HW1-1 Configured Grid](screenshot_hw11_grid.png)
+
+### HW1-2 & HW1-3 Value Iteration 結果與最短路徑
+![HW1-3 Results](screenshot_hw13_full.png)
 
 ---
 
